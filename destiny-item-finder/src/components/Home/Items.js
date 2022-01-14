@@ -11,17 +11,19 @@ const DisplayItemsForm = () => {
     axiosWithAuth()
     .get('/Destiny2/Armory/Search/DestinyInventoryItemDefinition/the-last-word/')
     .then(res => {
-      console.log(res)
+      // console.log(res.data.Response.results)
+      setItem(res.data.Response.results.results)
     })
     .catch(err => {
       console.log(err)
     })
-  })
-
+  },[])
+  console.log(item[0])
   return (
 
     <div>
       Items Here
+      {item[0].displayProperties.name}
     </div>
   )
 }
