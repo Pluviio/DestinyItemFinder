@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 // import { useParams, useHistory } from 'react-router-dom';
-import { axiosWithAuth } from "../utils/AxiosWithAuth";
+import { axiosWithAuth } from "../Utils/AxiosWithAuth";
 
 
 const DisplayItemsForm = () => {
